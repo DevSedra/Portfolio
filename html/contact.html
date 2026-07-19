@@ -31,19 +31,22 @@
 
     <nav class="navbar">
 
+        <div class="logo">
+            <a href="../index.html">Portfolio</a>
+        </div>
+
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
         <ul class="nav-links">
 
             <li><a href="../index.html">Accueil</a></li>
-
             <li><a href="../html/apropos.html">À propos</a></li>
-
             <li><a href="../html/competence.html">Compétences</a></li>
-
             <li><a href="../html/projets.html">Projets</a></li>
-
             <li><a href="../html/formation.html">Formation</a></li>
-
-            <li><a href="../html/contact.html" class="active">Contact</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
 
         </ul>
 
@@ -60,54 +63,37 @@
             <h1>Contact</h1>
 
             <p>
-                Vous souhaitez me contacter pour un stage, une collaboration
-                ou une opportunité professionnelle ?
-                N'hésitez pas à me joindre.
+
+                Vous souhaitez me contacter pour un stage,
+                une collaboration ou une opportunité professionnelle ?
+
             </p>
 
         </div>
 
-        <div class="contact-container">
+        <!-- Informations -->
 
-            <!-- Nom -->
+        <div class="contact-info">
 
-            <div class="contact-card">
+            <div class="contact-item">
 
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-brands fa-whatsapp"></i>
 
-                <h2>Nom</h2>
+                <h3>WhatsApp</h3>
 
-                <p>RAMAROKOTOHERINALA Hasintsoa Sedra</p>
+                <a href="https://wa.me/261386735392" target="_blank">
 
-            </div>
+                    +261 38 67 353 92
 
-            <!-- Email -->
-
-            <div class="contact-card">
-
-                <i class="fa-solid fa-envelope"></i>
-
-                <h2>E-mail</h2>
-
-                <p>
-
-                    <a href="mailto:ramarokotoherinala@gmail.com">
-
-                        ramarokotoherinala@gmail.com
-
-                    </a>
-
-                </p>
+                </a>
 
             </div>
 
-            <!-- Téléphone -->
-
-            <div class="contact-card">
+            <div class="contact-item">
 
                 <i class="fa-solid fa-phone"></i>
 
-                <h2>Téléphone</h2>
+                <h3>Téléphone</h3>
 
                 <p>+261 38 67 353 92</p>
 
@@ -115,58 +101,99 @@
 
             </div>
 
-            <!-- WhatsApp -->
-
-            <div class="contact-card">
-
-                <i class="fa-brands fa-whatsapp"></i>
-
-                <h2>WhatsApp</h2>
-
-                <p>
-
-                    <a href="https://wa.me/261386735392?text=Bonjour%20Hasintsoa%20Sedra,%20je%20vous%20contacte%20après%20avoir%20consulté%20votre%20portfolio."
-                       target="_blank">
-
-                        Discuter sur WhatsApp
-
-                    </a>
-
-                </p>
-
-            </div>
-
-            <!-- Adresse -->
-
-            <div class="contact-card">
-
-                <i class="fa-solid fa-location-dot"></i>
-
-                <h2>Adresse</h2>
-
-                <p>Toamasina, Madagascar</p>
-
-            </div>
-
-            <!-- GitHub -->
-
-            <div class="contact-card">
+            <div class="contact-item">
 
                 <i class="fa-brands fa-github"></i>
 
-                <h2>GitHub</h2>
+                <h3>GitHub</h3>
 
-                <p>
+                <a href="https://github.com/DevSedra" target="_blank">
 
-                    <a href="https://github.com/DevSedra" target="_blank">
+                    github.com/DevSedra
 
-                        github.com/DevSedra
-
-                    </a>
-
-                </p>
+                </a>
 
             </div>
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>E-mail</h3>
+
+                <a href="mailto:ramarokotoherinala@gmail.com">
+
+                    ramarokotoherinala@gmail.com
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Formulaire -->
+
+        <div class="contact-form">
+
+            <form id="contact-form">
+
+                <div class="input-group">
+
+                    <label>Nom complet</label>
+
+                    <input
+                        type="text"
+                        name="from_name"
+                        placeholder="Votre nom complet"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Adresse e-mail</label>
+
+                    <input
+                        type="email"
+                        name="from_email"
+                        placeholder="Votre adresse e-mail"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Sujet</label>
+
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Sujet"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Message</label>
+
+                    <textarea
+                        name="message"
+                        rows="7"
+                        placeholder="Votre message..."
+                        required></textarea>
+
+                </div>
+
+                <button type="submit" class="btn">
+
+                    Envoyer le message
+
+                </button>
+
+                <p id="resultat"></p>
+
+            </form>
 
         </div>
 
@@ -181,11 +208,15 @@
             <i class="fa-solid fa-envelope"></i>
         </a>
 
-        <a href="https://wa.me/261386735392" target="_blank" title="WhatsApp">
+        <a href="https://wa.me/261386735392"
+           target="_blank"
+           title="WhatsApp">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
 
-        <a href="https://github.com/DevSedra" target="_blank" title="GitHub">
+        <a href="https://github.com/DevSedra"
+           target="_blank"
+           title="GitHub">
             <i class="fa-brands fa-github"></i>
         </a>
 
@@ -196,6 +227,71 @@
     </p>
 
 </footer>
+
+<!-- EmailJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+emailjs.init("2ltZ5JqSIqwlmU1Bd");
+
+document.getElementById("contact-form").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const resultat = document.getElementById("resultat");
+
+    resultat.style.color = "#2563EB";
+
+    resultat.innerHTML = "Envoi du message...";
+
+    emailjs.sendForm(
+
+        "service_f0wctjd",
+
+        "template_fnxnx2r",
+
+        this
+
+    )
+
+    .then(function(){
+
+        resultat.style.color = "#16a34a";
+
+        resultat.innerHTML = " Votre message a été envoyé avec succès !";
+
+        document.getElementById("contact-form").reset();
+
+    })
+
+    .catch(function(error){
+
+        console.log(error);
+
+        resultat.style.color = "#dc2626";
+
+        resultat.innerHTML = "❌ Une erreur est survenue.";
+
+    });
+
+});
+
+</script>
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+});
+
+</script>
 </body>
 
 </html>
